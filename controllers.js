@@ -26,7 +26,16 @@ controllers.controller('MainController', ['$scope', function($scope) {
         text.style.color = getRandomColor();
     }
     // 5
-    $scope.addName = function() {}
+    $scope.addName = function() {
+        var name = document.getElementById('name');
+        name.innerHTML = "<span>Thomas Walker</span>";
+    }
+    // 6
+    $scope.addFriends = function(){
+        var friends = ['Brian', 'Lamonte', 'Chase', 'Tom', 'David', 'Hillary', 'Tyler', 'Will', 'Patrick', 'John'];
+        
+    }
+}]);
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF'.split('');
