@@ -17,9 +17,9 @@
     <div id="name"></div>
     <br/>
     <!--6-->
-    <button ng-click="addFriends()"></button>
+    <button ng-click="addFriends()">Show Friends</button>
         <ul>
-            
+           <li ng-repeat="friend in friends">{{friend}}</li> 
         </ul>
     </br>
 </div>

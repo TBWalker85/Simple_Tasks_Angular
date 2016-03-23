@@ -32,8 +32,9 @@ controllers.controller('MainController', ['$scope', function($scope) {
     }
     // 6
     $scope.addFriends = function(){
-        var friends = ['Brian', 'Lamonte', 'Chase', 'Tom', 'David', 'Hillary', 'Tyler', 'Will', 'Patrick', 'John'];
-        
+        $scope.addFriends = function(){
+            $scope.friends = ['Brian', 'Lamonte', 'Chase', 'Tom', 'David', 'Hillary', 'Tyler', 'Will', 'Patrick', 'John'];
+        }
     }
 }]);
 
